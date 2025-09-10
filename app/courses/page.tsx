@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { MessageCircle, Clock, Users, Award } from 'lucide-react';
-import { coursesMain } from '../data/statics';
+import { motion } from "framer-motion";
+import { MessageCircle, Clock, Users, Award } from "lucide-react";
+import { ContactInformation, coursesMain } from "../data/statics";
 
 export default function Courses() {
-
-
   const handleWhatsAppInquiry = (courseName: string) => {
     const message = `Hi! I'm interested in the ${courseName} at Miracle Care Campus. Could you please provide more information about admission requirements, fees, and upcoming batches?`;
-    const whatsappUrl = `https://wa.me/+94701780146?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+    const whatsappUrl = `https://wa.me/${
+      ContactInformation.WhatsAppNumber
+    }?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, "_blank");
   };
 
   return (
@@ -27,7 +27,8 @@ export default function Courses() {
             Our Courses
           </h1>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            Professional training programs designed to launch your career in healthcare and language services
+            Professional training programs designed to launch your career in
+            healthcare and language services
           </p>
         </motion.div>
       </section>
@@ -55,11 +56,15 @@ export default function Courses() {
                       {course.certification}
                     </div>
                   </div>
-                  
+
                   <div className="p-6">
-                    <h3 className="text-2xl font-bold text-gray-800 mb-3">{course.title}</h3>
-                    <p className="text-gray-600 mb-4 leading-relaxed">{course.description}</p>
-                    
+                    <h3 className="text-2xl font-bold text-gray-800 mb-3">
+                      {course.title}
+                    </h3>
+                    <p className="text-gray-600 mb-4 leading-relaxed">
+                      {course.description}
+                    </p>
+
                     <div className="flex flex-wrap gap-2 mb-6">
                       {course.highlights.map((highlight, idx) => (
                         <span
@@ -70,22 +75,26 @@ export default function Courses() {
                         </span>
                       ))}
                     </div>
-                    
+
                     <div className="grid grid-cols-3 gap-4 mb-6">
                       <div className="text-center">
                         <Clock className="h-5 w-5 text-[#000058] mx-auto mb-1" />
-                        <p className="text-sm text-gray-600">{course.duration}</p>
+                        <p className="text-sm text-gray-600">
+                          {course.duration}
+                        </p>
                       </div>
                       <div className="text-center">
                         <Users className="h-5 w-5 text-[#000070] mx-auto mb-1" />
-                        <p className="text-sm text-gray-600">{course.students}</p>
+                        <p className="text-sm text-gray-600">
+                          {course.students}
+                        </p>
                       </div>
                       <div className="text-center">
                         <Award className="h-5 w-5 text-[#000088] mx-auto mb-1" />
                         <p className="text-sm text-gray-600">Certified</p>
                       </div>
                     </div>
-                    
+
                     <button
                       onClick={() => handleWhatsAppInquiry(course.title)}
                       className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-3 px-6 rounded-xl font-semibold hover:from-green-600 hover:to-green-700 transition-all duration-300 flex items-center justify-center gap-2 group"
@@ -113,10 +122,11 @@ export default function Courses() {
               Ready to Start Your Journey?
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Join hundreds of successful graduates who have launched their careers with our professional training programs.
+              Join hundreds of successful graduates who have launched their
+              careers with our professional training programs.
             </p>
             <button
-              onClick={() => handleWhatsAppInquiry('General Information')}
+              onClick={() => handleWhatsAppInquiry("General Information")}
               className="bg-white text-[#000058] px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors inline-flex items-center gap-2"
             >
               <MessageCircle className="h-5 w-5" />
