@@ -39,10 +39,7 @@ export default function Courses() {
             Professional training programs designed to launch your career in
             healthcare and language services
           </p>
-          <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            Professional training programs designed to launch your career in
-            healthcare and language services
-          </p>
+         
         </motion.div>
       </section>
 
