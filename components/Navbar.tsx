@@ -66,8 +66,8 @@ export default function Navbar() {
                 href={item.href}
                 className={`relative px-3 py-2 text-sm font-medium transition-colors ${
                   scrolled
-                    ? "text-gray-700  hover:text-[#000058]"
-                    : " text-white hover:text-[#000058]"
+                    ? "text-gray-700  hover:text-[#72a6f3]"
+                    : " text-white hover:text-[#72a6f3]"
                 }`}
               >
                 {item.label}
@@ -84,7 +84,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg text-gray-600 hover:text-gray-800 hover:bg-gray-100 transition-colors"
+            className="md:hidden p-2 rounded-lg text-gray-600 hover:text-[#72a6f3] hover:bg-gray-100 transition-colors"
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -108,7 +108,7 @@ export default function Navbar() {
                     className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors ${
                       pathname === item.href
                         ? "text-[#000058] bg-[#000058]/5"
-                        : "text-gray-700 hover:text-[#000058] hover:bg-gray-50"
+                        : "text-gray-700 hover:text-[#72a6f3] hover:bg-gray-50"
                     }`}
                   >
                     {item.label}

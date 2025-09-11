@@ -276,4 +276,18 @@ export const slides = [
       highlights: ['Medication Knowledge', 'Customer Service', 'Inventory Management', 'Pharmacy Operations']
     }
   ];
+    export const certificationsGov = [
+    {
+      name: 'SLBFE',
+      fullName: 'Sri Lanka Bureau of Foreign Employment',
+      logo: 'https://res.cloudinary.com/dwml3axwl/image/upload/v1757562137/SLBFE_rwb3f4.jpg',
+      description: 'Authorized training provider for overseas employment preparation'
+    },
+    {
+      name: 'TVEC',
+      fullName: 'Tertiary and Vocational Education Commission',
+      logo: 'https://res.cloudinary.com/dwml3axwl/image/upload/v1757562138/TVEC_o7gecg.jpg',
+      description: 'Accredited technical and vocational education provider'
+    }
+  ];
 

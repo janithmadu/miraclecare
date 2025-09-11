@@ -1,11 +1,316 @@
-import React from 'react';
+"use client";
 
-const Page = () => {
-    return (
-        <div>
-            sdf
+import { motion } from "framer-motion";
+import {
+  CheckCircle,
+  Users,
+  Award,
+  Target,
+  Eye,
+  Heart,
+  Shield,
+  Globe,
+} from "lucide-react";
+import Link from "next/link";
+import { certificationsGov, features, stats } from "../data/statics";
+
+export default function About() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
+      {/* Hero Section */}
+      <section className="relative h-[400px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#000058] via-[#000070] to-[#000088]">
+        {/* Background Animation */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/5 rounded-full animate-pulse"></div>
+          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-white/5 rounded-full animate-pulse delay-1000"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-white/5 to-transparent rounded-full animate-pulse delay-500"></div>
         </div>
-    );
-}
 
-export default Page;
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="relative z-10 max-w-4xl mx-auto text-center px-4"
+        >
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+            About Us
+          </h1>
+          <p className="text-xl text-gray-200 mb-8 leading-relaxed">
+            Empowering students with professional healthcare and language skills
+            for over 15 years
+          </p>
+        </motion.div>
+      </section>
+
+      {/* Main About Section */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+            {/* Content */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-4xl font-bold text-gray-800 mb-6">
+                About{" "}
+                <span className="bg-gradient-to-r from-[#000058] to-[#000070] bg-clip-text text-transparent">
+                  Miracle Care Campus
+                </span>
+              </h2>
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                For over 15 years, Miracle Care Campus has been Sri Lanka's
+                premier institution for healthcare and language training. We've
+                successfully trained over 500 students who now work in
+                prestigious positions locally and internationally.
+              </p>
+              <p className="text-gray-600 mb-8 leading-relaxed">
+                Our commitment to excellence in education has made us a trusted
+                name in professional training. We combine theoretical knowledge
+                with practical skills to ensure our graduates are job-ready and
+                competitive in the global market.
+              </p>
+
+              <div className="grid sm:grid-cols-2 gap-4 mb-8">
+                {features.map((feature, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="flex items-start gap-3"
+                  >
+                    <feature.icon className="h-6 w-6 text-[#000058] mt-1 flex-shrink-0" />
+                    <div>
+                      <h3 className="font-semibold text-gray-800 mb-1">
+                        {feature.title}
+                      </h3>
+                      <p className="text-sm text-gray-600">
+                        {feature.description}
+                      </p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* Image Grid */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <div className="grid grid-cols-2 gap-4">
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                  className="space-y-4"
+                >
+                  <img
+                    src="https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=400"
+                    alt="Healthcare training"
+                    className="w-full h-48 object-cover rounded-2xl shadow-lg"
+                  />
+                  <img
+                    src="https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg?auto=compress&cs=tinysrgb&w=400"
+                    alt="Student training"
+                    className="w-full h-32 object-cover rounded-2xl shadow-lg"
+                  />
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                  className="space-y-4 pt-8"
+                >
+                  <img
+                    src="https://images.pexels.com/photos/8636677/pexels-photo-8636677.jpeg?auto=compress&cs=tinysrgb&w=400"
+                    alt="Language class"
+                    className="w-full h-32 object-cover rounded-2xl shadow-lg"
+                  />
+                  <img
+                    src="https://images.pexels.com/photos/7648047/pexels-photo-7648047.jpeg?auto=compress&cs=tinysrgb&w=400"
+                    alt="Campus facilities"
+                    className="w-full h-48 object-cover rounded-2xl shadow-lg"
+                  />
+                </motion.div>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Stats Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="grid md:grid-cols-4 gap-6 mb-20"
+          >
+            {stats.slice(0, 4).map((stat, index) => (
+              <div
+                key={index}
+                className="text-center bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <stat.icon className="h-12 w-12 text-[#000058] mx-auto mb-4" />
+                <div className="text-3xl font-bold text-[#000058] mb-2">
+                  {stat.number}
+                </div>
+                <p className="text-gray-600">{stat.label}</p>
+              </div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Vision & Mission Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+              Our{" "}
+              <span className="bg-gradient-to-r from-[#000058] to-[#000070] bg-clip-text text-transparent">
+                Vision & Mission
+              </span>
+            </h2>
+          </motion.div>
+
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Vision */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-[#000058] to-[#000070] rounded-3xl p-8 text-white"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <div className="bg-white/20 p-3 rounded-xl">
+                  <Eye className="h-8 w-8" />
+                </div>
+                <h3 className="text-3xl font-bold">Our Vision</h3>
+              </div>
+              <p className="text-lg leading-relaxed opacity-90">
+                To be the leading educational institution in Sri Lanka,
+                recognized globally for excellence in healthcare and language
+                training. We envision a future where our graduates become
+                leaders in their respective fields, contributing to the
+                betterment of society both locally and internationally.
+              </p>
+            </motion.div>
+
+            {/* Mission */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-green-600 to-green-700 rounded-3xl p-8 text-white"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <div className="bg-white/20 p-3 rounded-xl">
+                  <Target className="h-8 w-8" />
+                </div>
+                <h3 className="text-3xl font-bold">Our Mission</h3>
+              </div>
+              <p className="text-lg leading-relaxed opacity-90">
+                To provide world-class professional training that bridges the
+                gap between education and employment. We are committed to
+                nurturing skilled professionals through innovative teaching
+                methods, practical training, and continuous support for career
+                development.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Government Certifications */}
+      <section className="py-16 px-4 bg-gradient-to-br from-gray-50 to-white">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+              Government{" "}
+              <span className="bg-gradient-to-r from-[#000058] to-[#000070] bg-clip-text text-transparent">
+                Certifications
+              </span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              We are proud to be recognized and certified by leading government
+              bodies in Sri Lanka
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-12">
+            {certificationsGov.map((cert, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 text-center"
+              >
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden bg-white shadow-lg p-4 flex items-center justify-center">
+                  <img
+                    src={cert.logo}
+                    alt={cert.name}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h3 className="text-2xl font-bold text-[#000058] mb-2">
+                  {cert.name}
+                </h3>
+                <h4 className="text-lg font-semibold text-gray-700 mb-4">
+                  {cert.fullName}
+                </h4>
+                <p className="text-gray-600 leading-relaxed">
+                  {cert.description}
+                </p>
+                <div className="mt-6 inline-flex items-center gap-2 bg-[#000058]/10 text-[#000058] px-4 py-2 rounded-full">
+                  <Shield className="h-4 w-4" />
+                  <span className="text-sm font-medium">
+                    Certified Provider
+                  </span>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Additional Certifications Info */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="mt-16 bg-gradient-to-r from-[#000058] to-[#000070] rounded-3xl p-8 text-center text-white"
+          >
+            <Globe className="h-16 w-16 mx-auto mb-6 opacity-80" />
+            <h3 className="text-2xl font-bold mb-4">
+              Internationally Recognized Standards
+            </h3>
+            <p className="text-lg opacity-90 max-w-3xl mx-auto leading-relaxed">
+              Our certifications ensure that you receive education that meets
+              both local and international standards, opening doors to career
+              opportunities worldwide.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+    </div>
+  );
+}

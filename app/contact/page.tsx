@@ -91,22 +91,31 @@ Message: ${formData.message}`;
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
       {/* Hero Section */}
-      <section className="relative py-20 px-4 text-center overflow-hidden">
+
+       <section className="relative h-[400px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#000058] via-[#000070] to-[#000088]">
+        {/* Background Animation */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/5 rounded-full animate-pulse"></div>
+          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-white/5 rounded-full animate-pulse delay-1000"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-white/5 to-transparent rounded-full animate-pulse delay-500"></div>
+        </div>
+
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto"
+          className="relative z-10 max-w-4xl mx-auto text-center px-4"
         >
-          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-[#000058] to-[#000070] bg-clip-text text-transparent mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Contact Us
           </h1>
-          <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+          <p className="text-xl text-gray-200 mb-8 leading-relaxed">
             Get in touch with us to start your journey towards a successful
             career
           </p>
         </motion.div>
       </section>
+
 
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-2 gap-12">
