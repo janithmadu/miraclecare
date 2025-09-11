@@ -17,7 +17,7 @@ export default function Courses() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
       {/* Hero Section */}
 
-             <section className="relative h-[400px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#000058] via-[#000070] to-[#000088]">
+      <section className="relative h-[400px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#000058] via-[#000070] to-[#000088]">
         {/* Background Animation */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/5 rounded-full animate-pulse"></div>
@@ -34,18 +34,17 @@ export default function Courses() {
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Our Courses
           </h1>
-<<<<<<< HEAD
+
           <p className="text-xl text-gray-200 mb-8 leading-relaxed">
-              Professional training programs designed to launch your career in healthcare and language services
-=======
+            Professional training programs designed to launch your career in
+            healthcare and language services
+          </p>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
             Professional training programs designed to launch your career in
             healthcare and language services
->>>>>>> 5bd0d70781efbbecb01bee56ff650d9dba7ac55b
           </p>
         </motion.div>
       </section>
-      
 
       {/* Courses Grid */}
       <section className="py-16 px-4">
