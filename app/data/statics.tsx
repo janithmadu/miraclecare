@@ -197,13 +197,7 @@ export const FeaturedCoursesArr = [
     features: ["Elderly Care", "Disability Support", "Communication Skills"],
     color: "from-[#000070] to-[#000088]",
   },
-  {
-    icon: Globe,
-    title: "Japanese Language",
-    description: "Complete Japanese language program with cultural integration",
-    features: ["Speaking & Listening", "JLPT Preparation", "Business Japanese"],
-    color: "from-[#000088] to-[#0000a0]",
-  },
+ 
   {
     icon: Shield,
     title: "First Aid",
@@ -289,15 +283,7 @@ export const FeaturedCoursesArr = [
       image: 'https://images.pexels.com/photos/6823566/pexels-photo-6823566.jpeg?auto=compress&cs=tinysrgb&w=800',
       highlights: ['CPR Training', 'Emergency Response', 'Wound Care', 'Medical Emergencies']
     },
-    {
-      title: 'Japanese Language Courses',
-      description: 'Complete Japanese language program from beginner to advanced levels with cultural integration.',
-      duration: '6-12 months',
-      students: '80+ enrolled',
-      certification: 'JLPT Preparation',
-      image: 'https://images.pexels.com/photos/159844/cellular-education-classroom-159844.jpeg?auto=compress&cs=tinysrgb&w=800',
-      highlights: ['Speaking & Listening', 'Reading & Writing', 'Cultural Studies', 'Business Japanese']
-    },
+
     {
       title: 'Pharmacy Assistant Course',
       description: 'Professional training for pharmacy assistants covering medication management and customer service.',
