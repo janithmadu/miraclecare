@@ -139,17 +139,13 @@ export default function Footer() {
         >
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex items-center space-x-8 mb-6 md:mb-0">
-              <div className="text-center">
-                <div className="bg-white rounded-lg p-4 mb-2">
-                  <Heart className="h-12 w-12 text-[#000058] mx-auto" />
-                </div>
+              <div className="text-center  flex flex-col justify-center items-center ">
+                 <Image src="https://res.cloudinary.com/dwml3axwl/image/upload/v1757487969/Image_21_1_1_hzmuyy.png" alt='' width={100} height={100} />
                 <p className="text-sm text-gray-400">Miracle Care Campus</p>
               </div>
-              <div className="text-center">
-                <div className="bg-white rounded-lg p-4 mb-2">
-                  <Heart className="h-12 w-12 text-[#000070] mx-auto" />
-                </div>
-                <p className="text-sm text-gray-400">Mother Branch</p>
+              <div className="text-center flex flex-col justify-center items-center gap-y-3">
+                <Image src="https://res.cloudinary.com/dwml3axwl/image/upload/v1757662225/WhatsApp_Image_2025-09-10_at_10.22.26_1b6c528d_fnfhq3.png" alt='' width={80} height={80} />
+                <p className="text-sm text-gray-400">Miracle Care Hospital</p>
               </div>
             </div>
 

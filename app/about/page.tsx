@@ -10,9 +10,11 @@ import {
   Heart,
   Shield,
   Globe,
+  ArrowRight,
 } from "lucide-react";
 import Link from "next/link";
 import { certificationsGov, features, stats } from "../data/statics";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -73,7 +75,7 @@ export default function About() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-4 mb-8">
-                {features.map((feature, index) => (
+                {features.slice(0, 4).map((feature, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, y: 20 }}
@@ -256,7 +258,7 @@ export default function About() {
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-12">
-            {certificationsGov.map((cert, index) => (
+            {certificationsGov.slice(0, 4).map((cert, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
@@ -308,6 +310,194 @@ export default function About() {
               both local and international standards, opening doors to career
               opportunities worldwide.
             </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Company Relationship Section */}
+      <section className="py-16 px-4 bg-gradient-to-br from-[#000058] to-[#000070]">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Our <span className="text-blue-200">Healthcare Legacy</span>
+            </h2>
+            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+              Miracle Care Campus operates as a specialized training division of
+              Miracle Care Hospital, combining healthcare excellence with
+              professional education.
+            </p>
+          </motion.div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+            {/* Campus Info */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <div className="bg-white rounded-2xl p-4">
+                  <Image
+                    src="https://res.cloudinary.com/dwml3axwl/image/upload/v1757487969/Image_21_1_1_hzmuyy.png"
+                    alt=""
+                    width={50}
+                    height={50}
+                  />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white">
+                    Miracle Care Campus
+                  </h3>
+                  <p className="text-white/80">
+                    Professional Training Institute
+                  </p>
+                </div>
+              </div>
+              <p className="text-white/90 leading-relaxed mb-6">
+                As the educational arm of Miracle Care Hospital, we specialize
+                in providing world-class training programs in healthcare,
+                caregiving, and language services. Our curriculum is designed by
+                healthcare professionals with real-world experience.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="h-5 w-5 text-green-400" />
+                  <span className="text-white/90">
+                    Government Certified Programs
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="h-5 w-5 text-green-400" />
+                  <span className="text-white/90">
+                    Industry-Experienced Faculty
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="h-5 w-5 text-green-400" />
+                  <span className="text-white/90">
+                    100% Job Placement Support
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Hospital Info */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <div className="bg-white rounded-2xl p-4">
+                  <Image
+                    src="https://res.cloudinary.com/dwml3axwl/image/upload/v1757662225/WhatsApp_Image_2025-09-10_at_10.22.26_1b6c528d_fnfhq3.png"
+                    alt=""
+                    width={50}
+                    height={50}
+                  />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white">
+                    Miracle Care Hospital
+                  </h3>
+                  <p className="text-white/80">Mother Company - Est. 2008</p>
+                </div>
+              </div>
+              <p className="text-white/90 leading-relaxed mb-6">
+                Our parent organization has been providing exceptional
+                healthcare services for over 15 years. The hospital's commitment
+                to excellence and patient care forms the foundation of our
+                training philosophy at the campus.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="h-5 w-5 text-blue-400" />
+                  <span className="text-white/90">
+                    15+ Years Healthcare Excellence
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="h-5 w-5 text-blue-400" />
+                  <span className="text-white/90">
+                    Advanced Medical Facilities
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="h-5 w-5 text-blue-400" />
+                  <span className="text-white/90">
+                    Trusted Healthcare Provider
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Connection Visualization */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center"
+          >
+            <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
+              <h3 className="text-2xl font-bold text-white mb-6">
+                One Vision, Two Divisions
+              </h3>
+              <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+                <div className="text-center flex flex-col items-center justify-center">
+                  <Image
+                    src="https://res.cloudinary.com/dwml3axwl/image/upload/v1757662225/WhatsApp_Image_2025-09-10_at_10.22.26_1b6c528d_fnfhq3.png"
+                    alt=""
+                    width={120}
+                    height={120}
+                  />
+                  <h4 className="text-lg font-bold text-white mb-2">
+                    Healthcare Services
+                  </h4>
+                  <p className="text-white/80 text-sm">Miracle Care Hospital</p>
+                </div>
+
+                <div className="hidden md:block">
+                  <div className="flex items-center">
+                    <div className="w-16 h-0.5 bg-white/50"></div>
+                    <div className="mx-4 bg-white/20 rounded-full p-2">
+                      <ArrowRight className="h-6 w-6 text-white" />
+                    </div>
+                    <div className="w-16 h-0.5 bg-white/50"></div>
+                  </div>
+                </div>
+
+                <div className="text-center flex flex-col items-center justify-center">
+                  <Image
+                    src="https://res.cloudinary.com/dwml3axwl/image/upload/v1757487969/Image_21_1_1_hzmuyy.png"
+                    alt=""
+                    width={150}
+                    height={150}
+                  />
+                  <h4 className="text-lg font-bold text-white mb-2">
+                    Professional Training
+                  </h4>
+                  <p className="text-white/80 text-sm">Miracle Care Campus</p>
+                </div>
+              </div>
+
+              <p className="text-white/90 mt-6 max-w-2xl mx-auto">
+                Together, we create a comprehensive ecosystem of healthcare
+                excellence - from patient care to professional development,
+                ensuring the highest standards in everything we do.
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
