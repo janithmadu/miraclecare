@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { courses } from "../../data/cources";
+import { ContactInformation } from "@/app/data/statics";
 
 
 export default function CoursePage({ params }: { params: { id: string } }) {
@@ -29,7 +30,7 @@ export default function CoursePage({ params }: { params: { id: string } }) {
 
   const handleWhatsAppInquiry = () => {
     const message = `Hi! I'm interested in the ${course.title} at Miracle Care Campus. Could you please provide more information about admission requirements, fees, and upcoming batches?`;
-    const whatsappUrl = `https://wa.me/1234567890?text=${encodeURIComponent(
+    const whatsappUrl = `https://wa.me/${ContactInformation.WhatsAppNumber}?text=${encodeURIComponent(
       message
     )}`;
     window.open(whatsappUrl, "_blank");

@@ -92,7 +92,7 @@ Message: ${formData.message}`;
     <div className="min-h-screen bg-gradient-to-br overflow-hidden from-blue-50 via-white to-green-50">
       {/* Hero Section */}
 
-       <section className="relative h-[400px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#000058] via-[#000070] to-[#000088]">
+      <section className="relative h-[400px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#000058] via-[#000070] to-[#000088]">
         {/* Background Animation */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/5 rounded-full animate-pulse"></div>
@@ -115,7 +115,6 @@ Message: ${formData.message}`;
           </p>
         </motion.div>
       </section>
-
 
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="md:grid lg:grid-cols-2 md:gap-12">
@@ -276,7 +275,10 @@ Message: ${formData.message}`;
                           {item.title}
                         </h3>
                         {item.details.map((detail, idx) => (
-                          <p key={idx} className=" text-xs md:text-lg text-gray-600">
+                          <p
+                            key={idx}
+                            className=" text-xs md:text-lg text-gray-600"
+                          >
                             {detail}
                           </p>
                         ))}
