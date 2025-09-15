@@ -152,8 +152,8 @@ export default function CoursePage({ params }: { params: { id: string } }) {
           <div className="space-y-8">
             {/* Course Details */}
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               className="bg-white rounded-3xl shadow-lg p-6"
             >
@@ -215,8 +215,8 @@ export default function CoursePage({ params }: { params: { id: string } }) {
 
             {/* Documents Required */}
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+               initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
               className="bg-white rounded-3xl shadow-lg p-6"
             >
@@ -235,8 +235,8 @@ export default function CoursePage({ params }: { params: { id: string } }) {
 
             {/* Certificate Award */}
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="bg-gradient-to-br from-[#000058] to-[#000070] rounded-3xl p-6 text-white"
             >
@@ -251,8 +251,8 @@ export default function CoursePage({ params }: { params: { id: string } }) {
 
             {/* Inquiry Card */}
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
               className="bg-gradient-to-br from-green-500 to-green-600 rounded-3xl p-6 text-white"
             >
