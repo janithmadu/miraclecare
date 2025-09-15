@@ -54,7 +54,13 @@ export default function Navbar() {
               >
                 Miracle Care Campus
               </h1>
-              <p className=" text-xs md:text-lg text-gray-500">Changing Lives</p>
+              <p
+                className={` text-xs md:text-lg  ${
+                  scrolled ? "text-gray-500" : "text-white"
+                }`}
+              >
+                Changing Lives
+              </p>
             </div>
           </Link>
 

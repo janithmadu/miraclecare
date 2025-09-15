@@ -255,7 +255,8 @@ export const FeaturedCoursesArr = [
       students: '50+ enrolled',
       certification: 'Government Certified',
       image: 'https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg?auto=compress&cs=tinysrgb&w=800',
-      highlights: ['Patient Care', 'Medical Terminology', 'Clinical Skills', 'Healthcare Ethics']
+      highlights: ['Patient Care', 'Medical Terminology', 'Clinical Skills', 'Healthcare Ethics'],
+      link:"nursing"
     },
     {
       title: 'Care Giver Courses',
@@ -264,7 +265,8 @@ export const FeaturedCoursesArr = [
       students: '40+ enrolled',
       certification: 'Industry Recognized',
       image: 'https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=800',
-      highlights: ['Elderly Care', 'Disability Support', 'Communication Skills', 'Safety Protocols']
+      highlights: ['Elderly Care', 'Disability Support', 'Communication Skills', 'Safety Protocols'],
+      link:"caregiver"
     },
     {
       title: 'First Aid',
@@ -273,7 +275,8 @@ export const FeaturedCoursesArr = [
       students: '100+ enrolled',
       certification: 'Red Cross Certified',
       image: 'https://images.pexels.com/photos/6823566/pexels-photo-6823566.jpeg?auto=compress&cs=tinysrgb&w=800',
-      highlights: ['CPR Training', 'Emergency Response', 'Wound Care', 'Medical Emergencies']
+      highlights: ['CPR Training', 'Emergency Response', 'Wound Care', 'Medical Emergencies'],
+      link:"firstaid"
     },
 
     {
@@ -283,7 +286,8 @@ export const FeaturedCoursesArr = [
       students: '30+ enrolled',
       certification: 'Pharmacy Board Certified',
       image: 'https://images.pexels.com/photos/4226721/pexels-photo-4226721.jpeg?auto=compress&cs=tinysrgb&w=800',
-      highlights: ['Medication Knowledge', 'Customer Service', 'Inventory Management', 'Pharmacy Operations']
+      highlights: ['Medication Knowledge', 'Customer Service', 'Inventory Management', 'Pharmacy Operations'],
+      link:"pharmacyassistantcourse"
     }
   ];
     export const certificationsGov = [

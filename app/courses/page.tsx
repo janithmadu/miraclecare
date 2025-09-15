@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MessageCircle, Clock, Users, Award } from "lucide-react";
+import { MessageCircle, Clock, Users, Award, BookOpen } from "lucide-react";
 import { ContactInformation, coursesMain } from "../data/statics";
+import Link from "next/link";
 
 export default function Courses() {
   const handleWhatsAppInquiry = (courseName: string) => {
@@ -39,7 +40,6 @@ export default function Courses() {
             Professional training programs designed to launch your career in
             healthcare and language services
           </p>
-         
         </motion.div>
       </section>
 
@@ -105,13 +105,23 @@ export default function Courses() {
                       </div>
                     </div>
 
-                    <button
-                      onClick={() => handleWhatsAppInquiry(course.title)}
-                      className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-3 px-6 rounded-xl font-semibold hover:from-green-600 hover:to-green-700 transition-all duration-300 flex items-center justify-center gap-2 group"
-                    >
-                      <MessageCircle className="h-5 w-5 group-hover:scale-110 transition-transform" />
-                      Inquire on WhatsApp
-                    </button>
+                    <div className="flex gap-x-3">
+                      <button
+                        onClick={() => handleWhatsAppInquiry(course.title)}
+                        className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-3 px-6 rounded-xl font-semibold hover:from-green-600 hover:to-green-700 transition-all duration-300 flex items-center justify-center gap-2 group"
+                      >
+                        <MessageCircle className="h-5 w-5 group-hover:scale-110 transition-transform" />
+                        Inquire on WhatsApp
+                      </button>
+
+                      <Link
+                        href={`/course/${course.link}`}
+                        className="w-full bg-gradient-to-r from-[#000088] to-[#000055] text-white py-3 px-6 rounded-xl font-semibold hover:from-[#000088] hover:to-[#000060] transition-all duration-300 flex items-center justify-center gap-2 group"
+                      >
+                        <BookOpen className="h-5 w-5 group-hover:scale-110 transition-transform" />
+                        View Course Details
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </motion.div>
