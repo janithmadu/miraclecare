@@ -3,6 +3,7 @@
 import { slides, stats } from "@/app/data/statics";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ChevronLeft, ChevronRight, Play } from "lucide-react";
+import Image from "next/image";
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
@@ -176,9 +177,9 @@ export default function Hero() {
               className="absolute -top-4 -left-4 bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg border border-white/20"
             >
               <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                <Image src="https://res.cloudinary.com/dwml3axwl/image/upload/v1757927085/nvq-removebg-preview_gmkvcp.png" alt="NVQ" width={50} height={50} />
                 <span className="text-sm font-medium text-[#000058]">
-                  Live Classes
+                  NVQ Certified Class
                 </span>
               </div>
             </motion.div>

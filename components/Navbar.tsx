@@ -41,25 +41,25 @@ export default function Navbar() {
           <Link href="/" className="flex items-center space-x-2">
             <Image
               src="https://res.cloudinary.com/dwml3axwl/image/upload/f_auto/q_auto/v1757487969/Image_21_1_1_hzmuyy.png"
-              width={60}
-              height={60}
+              width={90}
+              height={90}
               alt="Miracle Care Logo"
             />
 
             <div>
               <h1
-                className={`text-xl font-bold ${
+                className={` md:text-xl lg:text-2xl font-bold ${
                   scrolled ? "text-[#000058]" : "text-white"
                 } `}
               >
                 Miracle Care Campus
               </h1>
-              <p className="text-xs text-gray-500">Changing Lives</p>
+              <p className=" text-xs md:text-lg text-gray-500">Changing Lives</p>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -84,7 +84,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg text-gray-600 hover:text-[#72a6f3] hover:bg-gray-100 transition-colors"
+            className="lg:hidden p-2 rounded-lg text-gray-600 hover:text-[#72a6f3] hover:bg-gray-100 transition-colors"
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>

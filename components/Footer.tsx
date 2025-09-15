@@ -145,7 +145,7 @@ export default function Footer() {
               </div>
               <div className="text-center flex flex-col justify-center items-center gap-y-3">
                 <Image src="https://res.cloudinary.com/dwml3axwl/image/upload/v1757662225/WhatsApp_Image_2025-09-10_at_10.22.26_1b6c528d_fnfhq3.png" alt='' width={80} height={80} />
-                <p className="text-sm text-gray-400">Miracle Care Hospital</p>
+                <p className="text-sm text-gray-400">Miracle Health Hospital</p>
               </div>
             </div>
 

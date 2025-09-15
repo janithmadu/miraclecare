@@ -47,16 +47,6 @@ export const slides = [
     href: "/courses",
   },
   {
-    title: "Japanese Language Mastery",
-    subtitle: "Gateway to Global Opportunities",
-    description:
-      "Complete Japanese language program with cultural integration and JLPT preparation",
-    image:
-      "https://images.pexels.com/photos/159844/cellular-education-classroom-159844.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    cta: "Learn Japanese",
-    href: "/courses",
-  },
-  {
     title: "Care Giver Excellence",
     subtitle: "Compassionate Care Training",
     description:
@@ -74,6 +64,16 @@ export const slides = [
     image:
       "https://images.pexels.com/photos/6823566/pexels-photo-6823566.jpeg?auto=compress&cs=tinysrgb&w=1200",
     cta: "Get Certified",
+    href: "/courses",
+  },
+  {
+    title: "NVQ Level Certifications",
+    subtitle: "Recognized National Qualifications",
+    description:
+      "Earn NVQ Level certifications to advance your career with nationally recognized vocational qualifications.",
+    image:
+      "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    cta: "View NVQ Courses",
     href: "/courses",
   },
 ];
@@ -97,7 +97,6 @@ export const courses = [
   "Nursing Courses",
   "Care Giver Courses",
   "First Aid Training",
-  "Japanese Language",
   "Pharmacy Assistant",
 ];
 export const quickLinks = [
@@ -137,11 +136,6 @@ export const images = [
     description: "State-of-the-art facilities designed for optimal learning",
   },
   {
-    src: "https://images.pexels.com/photos/7648047/pexels-photo-7648047.jpeg?auto=compress&cs=tinysrgb&w=800",
-    title: "Advanced Training Labs",
-    description: "Fully equipped medical and language training facilities",
-  },
-  {
     src: "https://images.pexels.com/photos/8636677/pexels-photo-8636677.jpeg?auto=compress&cs=tinysrgb&w=800",
     title: "Interactive Classrooms",
     description: "Modern learning environments with latest technology",
@@ -151,6 +145,11 @@ export const images = [
     title: "Practical Training Areas",
     description: "Real-world simulation environments for hands-on learning",
   },
+  {
+  src: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800",
+  title: "Collaborative Learning Spaces",
+  description: "Open areas designed to encourage teamwork and innovation",
+}
 ];
 
 export const certifications = [
@@ -230,13 +229,6 @@ export const FeaturedCoursesArr = [
       rating: 5,
       text: 'The nursing program at Miracle Care Campus transformed my career. The practical training and expert faculty prepared me perfectly for working in a leading hospital. I highly recommend this institution.',
       image: 'https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg?auto=compress&cs=tinysrgb&w=300'
-    },
-    {
-      name: 'Rajesh Kumar',
-      course: 'Japanese Language',
-      rating: 5,
-      text: 'Thanks to the Japanese language course, I was able to secure a job in Japan within 6 months of graduation. The cultural training along with language skills made all the difference.',
-      image: 'https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=300'
     },
     {
       name: 'Sunitha Fernando',

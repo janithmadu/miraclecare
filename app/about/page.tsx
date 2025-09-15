@@ -329,7 +329,7 @@ export default function About() {
             </h2>
             <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
               Miracle Care Campus operates as a specialized training division of
-              Miracle Care Hospital, combining healthcare excellence with
+              Miracle Health Hospital, combining healthcare excellence with
               professional education.
             </p>
           </motion.div>
@@ -362,7 +362,7 @@ export default function About() {
                 </div>
               </div>
               <p className="text-white/90 leading-relaxed mb-6">
-                As the educational arm of Miracle Care Hospital, we specialize
+                As the educational arm of Miracle Health Hospital, we specialize
                 in providing world-class training programs in healthcare,
                 caregiving, and language services. Our curriculum is designed by
                 healthcare professionals with real-world experience.
@@ -408,7 +408,7 @@ export default function About() {
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-white">
-                    Miracle Care Hospital
+                    Miracle Health Hospital
                   </h3>
                   <p className="text-white/80">Mother Company - Est. 2008</p>
                 </div>
@@ -465,7 +465,7 @@ export default function About() {
                   <h4 className="text-lg font-bold text-white mb-2">
                     Healthcare Services
                   </h4>
-                  <p className="text-white/80 text-sm">Miracle Care Hospital</p>
+                  <p className="text-white/80 text-sm">Miracle Health Hospital</p>
                 </div>
 
                 <div className="hidden md:block">

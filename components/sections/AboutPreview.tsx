@@ -123,7 +123,7 @@ export default function AboutPreview() {
         >
           <h3 className="text-2xl font-bold mb-6">Part of Miracle Care Healthcare Group</h3>
           <p className="text-lg opacity-90 mb-8 max-w-3xl mx-auto">
-            Miracle Care Campus is a proud subsidiary of Miracle Care Hospital, bringing together 
+            Miracle Care Campus is a proud subsidiary of Miracle Health Hospital, bringing together 
             decades of healthcare excellence and professional training expertise.
           </p>
           
@@ -164,7 +164,7 @@ export default function AboutPreview() {
               <p className="text-xs opacity-70 mt-2 text-center">Subsidiary of</p>
             </motion.div>
 
-            {/* Miracle Care Hospital Logo */}
+            {/*Miracle Health Hospital Logo */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -173,7 +173,7 @@ export default function AboutPreview() {
               className="text-center flex flex-col items-center justify-center"
             >
                 <Image src="https://res.cloudinary.com/dwml3axwl/image/upload/v1757662225/WhatsApp_Image_2025-09-10_at_10.22.26_1b6c528d_fnfhq3.png" alt='' width={150} height={150} />
-              <h4 className="text-xl font-bold mb-2">Miracle Care Hospital</h4>
+              <h4 className="text-xl font-bold mb-2">Miracle Health Hospital</h4>
               <p className="text-sm opacity-80">Healthcare Excellence Since 2008</p>
               <div className="mt-2 inline-block bg-white/20 px-3 py-1 rounded-full text-xs">
                 Mother Company
