@@ -118,7 +118,7 @@ Message: ${formData.message}`;
 
 
       <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="md:grid lg:grid-cols-2 md:gap-12">
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -245,7 +245,7 @@ Message: ${formData.message}`;
           >
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold text-gray-800 mb-6">
+                <h2 className="text-3xl mt-5 md:mt-0 font-bold text-gray-800 mb-6">
                   Get in Touch
                 </h2>
                 <p className="text-gray-600 leading-relaxed">
@@ -256,7 +256,7 @@ Message: ${formData.message}`;
                 </p>
               </div>
 
-              <div className="grid gap-6">
+              <div className="md:grid space-y-3 md:space-y-0 gap-6">
                 {contactInfo.map((item, index) => (
                   <motion.div
                     key={index}
@@ -276,7 +276,7 @@ Message: ${formData.message}`;
                           {item.title}
                         </h3>
                         {item.details.map((detail, idx) => (
-                          <p key={idx} className="text-gray-600">
+                          <p key={idx} className=" text-xs md:text-lg text-gray-600">
                             {detail}
                           </p>
                         ))}
