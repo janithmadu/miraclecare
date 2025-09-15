@@ -15,7 +15,7 @@ export default function Courses() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
+    <div className="min-h-screen bg-gradient-to-br overflow-hidden from-blue-50 via-white to-green-50">
       {/* Hero Section */}
 
       <section className="relative h-[400px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#000058] via-[#000070] to-[#000088]">
@@ -108,7 +108,7 @@ export default function Courses() {
                     <div className="flex gap-x-3">
                       <button
                         onClick={() => handleWhatsAppInquiry(course.title)}
-                        className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-3 px-6 rounded-xl font-semibold hover:from-green-600 hover:to-green-700 transition-all duration-300 flex items-center justify-center gap-2 group"
+                        className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-3 px-3 md:px-6 rounded-xl font-semibold hover:from-green-600 hover:to-green-700 transition-all text-[10px] md:text-[16px] duration-300 flex items-center justify-center gap-2 text-center md:text-start group"
                       >
                         <MessageCircle className="h-5 w-5 group-hover:scale-110 transition-transform" />
                         Inquire on WhatsApp
@@ -116,7 +116,7 @@ export default function Courses() {
 
                       <Link
                         href={`/course/${course.link}`}
-                        className="w-full bg-gradient-to-r from-[#000088] to-[#000055] text-white py-3 px-6 rounded-xl font-semibold hover:from-[#000088] hover:to-[#000060] transition-all duration-300 flex items-center justify-center gap-2 group"
+                        className="w-full bg-gradient-to-r from-[#000088] to-[#000055] text-white py-3 px-3 md:px-6 rounded-xl font-semibold hover:from-[#000088] hover:to-[#000060] transition-all text-[10px] md:text-[16px] duration-300 flex items-center justify-center gap-2 text-center md:text-start group"
                       >
                         <BookOpen className="h-5 w-5 group-hover:scale-110 transition-transform" />
                         View Course Details

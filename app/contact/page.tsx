@@ -89,7 +89,7 @@ Message: ${formData.message}`;
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
+    <div className="min-h-screen bg-gradient-to-br overflow-hidden from-blue-50 via-white to-green-50">
       {/* Hero Section */}
 
        <section className="relative h-[400px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#000058] via-[#000070] to-[#000088]">
