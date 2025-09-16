@@ -37,6 +37,16 @@ export const stats = [
 
 export const slides = [
   {
+  title: "Israel Job Granted Courses",
+  subtitle: "Guaranteed Overseas Employment",
+  description:
+    "Specialized training programs designed for overseas employment opportunities in Israel with job placement support.",
+  image:
+    "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200",
+  cta: "Explore Israel Courses",
+  href: "/courses",
+},
+  {
     title: "Professional Nursing Training",
     subtitle: "Launch Your Healthcare Career",
     description:
@@ -146,10 +156,10 @@ export const images = [
     description: "Real-world simulation environments for hands-on learning",
   },
   {
-  src: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800",
-  title: "Collaborative Learning Spaces",
-  description: "Open areas designed to encourage teamwork and innovation",
-}
+    src: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800",
+    title: "Collaborative Learning Spaces",
+    description: "Open areas designed to encourage teamwork and innovation",
+  },
 ];
 
 export const certifications = [
@@ -196,7 +206,7 @@ export const FeaturedCoursesArr = [
     features: ["Elderly Care", "Disability Support", "Communication Skills"],
     color: "from-[#000070] to-[#000088]",
   },
- 
+
   {
     icon: Shield,
     title: "First Aid",
@@ -218,90 +228,116 @@ export const FeaturedCoursesArr = [
   },
 ];
 
+export const testimonials = [
+  {
+    name: "Priya Sharma",
+    course: "Nursing Program",
+    rating: 5,
+    text: "The nursing program at Miracle Care Campus transformed my career. The practical training and expert faculty prepared me perfectly for working in a leading hospital. I highly recommend this institution.",
+    image:
+      "https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg?auto=compress&cs=tinysrgb&w=300",
+  },
+  {
+    name: "Sunitha Fernando",
+    course: "Care Giver Training",
+    rating: 5,
+    text: "The care giver course gave me the confidence and skills to work with elderly patients. The instructors were patient and thorough. I now have a rewarding career helping others.",
+    image:
+      "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=300",
+  },
+  {
+    name: "Mohamed Ali",
+    course: "Pharmacy Assistant",
+    rating: 5,
+    text: "The pharmacy assistant program was comprehensive and practical. I learned everything from medication management to customer service. Got placed immediately after graduation.",
+    image:
+      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=300",
+  },
+];
 
+export const coursesMain = [
+  {
+    title: "Nursing Courses",
+    description:
+      "Comprehensive nursing programs covering patient care, medical procedures, and healthcare ethics.",
+    duration: "12-18 months",
+    students: "50+ enrolled",
+    certification: "Government Certified",
+    image:
+      "https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg?auto=compress&cs=tinysrgb&w=800",
+    highlights: [
+      "Patient Care",
+      "Medical Terminology",
+      "Clinical Skills",
+      "Healthcare Ethics",
+    ],
+    link: "nursing",
+  },
+  {
+    title: "Care Giver Courses",
+    description:
+      "Professional caregiver training focusing on elderly care, disability support, and patient assistance.",
+    duration: "6-9 months",
+    students: "40+ enrolled",
+    certification: "Industry Recognized",
+    image:
+      "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=800",
+    highlights: [
+      "Elderly Care",
+      "Disability Support",
+      "Communication Skills",
+      "Safety Protocols",
+    ],
+    link: "caregiver",
+  },
+  {
+    title: "First Aid",
+    description:
+      "Essential first aid and emergency response training for various emergency situations.",
+    duration: "2-4 weeks",
+    students: "100+ enrolled",
+    certification: "Red Cross Certified",
+    image:
+      "https://images.pexels.com/photos/6823566/pexels-photo-6823566.jpeg?auto=compress&cs=tinysrgb&w=800",
+    highlights: [
+      "CPR Training",
+      "Emergency Response",
+      "Wound Care",
+      "Medical Emergencies",
+    ],
+    link: "firstaid",
+  },
 
-
-
-    export const testimonials = [
-    {
-      name: 'Priya Sharma',
-      course: 'Nursing Program',
-      rating: 5,
-      text: 'The nursing program at Miracle Care Campus transformed my career. The practical training and expert faculty prepared me perfectly for working in a leading hospital. I highly recommend this institution.',
-      image: 'https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg?auto=compress&cs=tinysrgb&w=300'
-    },
-    {
-      name: 'Sunitha Fernando',
-      course: 'Care Giver Training',
-      rating: 5,
-      text: 'The care giver course gave me the confidence and skills to work with elderly patients. The instructors were patient and thorough. I now have a rewarding career helping others.',
-      image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=300'
-    },
-    {
-      name: 'Mohamed Ali',
-      course: 'Pharmacy Assistant',
-      rating: 5,
-      text: 'The pharmacy assistant program was comprehensive and practical. I learned everything from medication management to customer service. Got placed immediately after graduation.',
-      image: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=300'
-    }
-  ];
-
-
-    export const coursesMain = [
-    {
-      title: 'Nursing Courses',
-      description: 'Comprehensive nursing programs covering patient care, medical procedures, and healthcare ethics.',
-      duration: '12-18 months',
-      students: '50+ enrolled',
-      certification: 'Government Certified',
-      image: 'https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg?auto=compress&cs=tinysrgb&w=800',
-      highlights: ['Patient Care', 'Medical Terminology', 'Clinical Skills', 'Healthcare Ethics'],
-      link:"nursing"
-    },
-    {
-      title: 'Care Giver Courses',
-      description: 'Professional caregiver training focusing on elderly care, disability support, and patient assistance.',
-      duration: '6-9 months',
-      students: '40+ enrolled',
-      certification: 'Industry Recognized',
-      image: 'https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=800',
-      highlights: ['Elderly Care', 'Disability Support', 'Communication Skills', 'Safety Protocols'],
-      link:"caregiver"
-    },
-    {
-      title: 'First Aid',
-      description: 'Essential first aid and emergency response training for various emergency situations.',
-      duration: '2-4 weeks',
-      students: '100+ enrolled',
-      certification: 'Red Cross Certified',
-      image: 'https://images.pexels.com/photos/6823566/pexels-photo-6823566.jpeg?auto=compress&cs=tinysrgb&w=800',
-      highlights: ['CPR Training', 'Emergency Response', 'Wound Care', 'Medical Emergencies'],
-      link:"firstaid"
-    },
-
-    {
-      title: 'Pharmacy Assistant Course',
-      description: 'Professional training for pharmacy assistants covering medication management and customer service.',
-      duration: '4-6 months',
-      students: '30+ enrolled',
-      certification: 'Pharmacy Board Certified',
-      image: 'https://images.pexels.com/photos/4226721/pexels-photo-4226721.jpeg?auto=compress&cs=tinysrgb&w=800',
-      highlights: ['Medication Knowledge', 'Customer Service', 'Inventory Management', 'Pharmacy Operations'],
-      link:"pharmacyassistantcourse"
-    }
-  ];
-    export const certificationsGov = [
-    {
-      name: 'SLBFE',
-      fullName: 'Sri Lanka Bureau of Foreign Employment',
-      logo: 'https://res.cloudinary.com/dwml3axwl/image/upload/v1757562137/SLBFE_rwb3f4.jpg',
-      description: 'Authorized training provider for overseas employment preparation'
-    },
-    {
-      name: 'TVEC',
-      fullName: 'Tertiary and Vocational Education Commission',
-      logo: 'https://res.cloudinary.com/dwml3axwl/image/upload/v1757562138/TVEC_o7gecg.jpg',
-      description: 'Accredited technical and vocational education provider'
-    }
-  ];
-
+  {
+    title: "Pharmacy Assistant Course",
+    description:
+      "Professional training for pharmacy assistants covering medication management and customer service.",
+    duration: "4-6 months",
+    students: "30+ enrolled",
+    certification: "Pharmacy Board Certified",
+    image:
+      "https://images.pexels.com/photos/4226721/pexels-photo-4226721.jpeg?auto=compress&cs=tinysrgb&w=800",
+    highlights: [
+      "Medication Knowledge",
+      "Customer Service",
+      "Inventory Management",
+      "Pharmacy Operations",
+    ],
+    link: "pharmacyassistantcourse",
+  },
+];
+export const certificationsGov = [
+  {
+    name: "SLBFE",
+    fullName: "Sri Lanka Bureau of Foreign Employment",
+    logo: "https://res.cloudinary.com/dwml3axwl/image/upload/v1757562137/SLBFE_rwb3f4.jpg",
+    description:
+      "Authorized training provider for overseas employment preparation",
+  },
+  {
+    name: "TVEC",
+    fullName: "Tertiary and Vocational Education Commission",
+    logo: "https://res.cloudinary.com/dwml3axwl/image/upload/v1757562138/TVEC_o7gecg.jpg",
+    description: "Accredited technical and vocational education provider",
+  },
+];

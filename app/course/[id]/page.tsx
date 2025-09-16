@@ -11,11 +11,11 @@ import {
   Calendar,
   FileText,
   DollarSign,
+  Briefcase,
 } from "lucide-react";
 import Link from "next/link";
 import { courses } from "../../data/cources";
 import { ContactInformation } from "@/app/data/statics";
-
 
 export default function CoursePage({ params }: { params: { id: string } }) {
   const course = courses.find((c) => c.id === params.id);
@@ -30,9 +30,9 @@ export default function CoursePage({ params }: { params: { id: string } }) {
 
   const handleWhatsAppInquiry = () => {
     const message = `Hi! I'm interested in the ${course.title} at Miracle Care Campus. Could you please provide more information about admission requirements, fees, and upcoming batches?`;
-    const whatsappUrl = `https://wa.me/${ContactInformation.WhatsAppNumber}?text=${encodeURIComponent(
-      message
-    )}`;
+    const whatsappUrl = `https://wa.me/${
+      ContactInformation.WhatsAppNumber
+    }?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
   };
 
@@ -64,7 +64,9 @@ export default function CoursePage({ params }: { params: { id: string } }) {
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             {course.title}
           </h1>
-          <p className="text-xl leading-relaxed opacity-90">{course.subtitle}</p>
+          <p className="text-xl leading-relaxed opacity-90">
+            {course.subtitle}
+          </p>
         </motion.div>
       </section>
 
@@ -246,6 +248,22 @@ export default function CoursePage({ params }: { params: { id: string } }) {
                 <h3 className="text-xl font-bold mb-3">Certificate Award</h3>
                 <p className="text-sm opacity-90">
                   {course.courseDetails.certificateAward}
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }} // small delay so it animates after certificate card
+              className="bg-gradient-to-br from-green-700 to-green-900 rounded-3xl p-6 text-white"
+            >
+              <div className="text-center">
+                <Briefcase className="h-12 w-12 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-3">Israel Job Granted</h3>
+                <p className="text-sm opacity-90">
+                  Guaranteed job opportunities in Israel upon successful course
+                  completion.
                 </p>
               </div>
             </motion.div>
