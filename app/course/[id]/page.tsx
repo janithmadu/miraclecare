@@ -99,30 +99,34 @@ export default function CoursePage({ params }: { params: { id: string } }) {
             </motion.div>
 
             {/* Course Content */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="bg-white rounded-3xl shadow-lg p-8"
-            >
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Course Content
-              </h2>
-              <div className="grid md:grid-cols-2 gap-4">
-                {course.courseContent.map((content, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.6, delay: index * 0.1 }}
-                    className="flex items-center gap-3 p-3 rounded-xl hover:bg-[#000058]/5 transition-colors"
-                  >
-                    <CheckCircle className="h-5 w-5 text-[#000058]" />
-                    <span className="text-gray-700">{content}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
+            {course?.courseContent?.length ? (
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="bg-white rounded-3xl shadow-lg p-8"
+              >
+                <h2 className="text-3xl font-bold text-gray-800 mb-6">
+                  Course Content
+                </h2>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <>
+                    {course.courseContent.map((content, index) => (
+                      <motion.div
+                        key={index}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6, delay: index * 0.1 }}
+                        className="flex items-center gap-3 p-3 rounded-xl hover:bg-[#000058]/5 transition-colors"
+                      >
+                        <CheckCircle className="h-5 w-5 text-[#000058]" />
+                        <span className="text-gray-700">{content}</span>
+                      </motion.div>
+                    ))}
+                  </>
+                </div>
+              </motion.div>
+            ) : null}
 
             {/* Career Opportunities */}
             <motion.div

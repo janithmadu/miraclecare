@@ -192,7 +192,7 @@ export const certifications = [
 export const FeaturedCoursesArr = [
   {
     icon: Heart,
-    title: "Nursing Courses",
+    title: "Nursing Courses NVQ 4",
     description:
       "Comprehensive nursing programs with hands-on clinical training",
     features: ["Patient Care", "Medical Procedures", "Healthcare Ethics"],
@@ -200,7 +200,7 @@ export const FeaturedCoursesArr = [
   },
   {
     icon: Users,
-    title: "Care Giver Courses",
+    title: "Caregiver Course NVQ 3 & 4",
     description:
       "Professional caregiver training for elderly and disability care",
     features: ["Elderly Care", "Disability Support", "Communication Skills"],
@@ -257,10 +257,10 @@ export const testimonials = [
 
 export const coursesMain = [
   {
-    title: "Nursing Courses",
+    title: "Nursing Courses NVQ 4",
     description:
       "Comprehensive nursing programs covering patient care, medical procedures, and healthcare ethics.",
-    duration: "12-18 months",
+    duration: "12 months",
     students: "50+ enrolled",
     certification: "Government Certified",
     image:
@@ -274,10 +274,10 @@ export const coursesMain = [
     link: "nursing",
   },
   {
-    title: "Care Giver Courses",
+    title: "Caregiver Course NVQ 3 & 4",
     description:
       "Professional caregiver training focusing on elderly care, disability support, and patient assistance.",
-    duration: "6-9 months",
+    duration: "52 days",
     students: "40+ enrolled",
     certification: "Industry Recognized",
     image:
@@ -290,12 +290,30 @@ export const coursesMain = [
     ],
     link: "caregiver",
   },
+
+   {
+    title: "Caregiver Course NVQ  4",
+    description:
+      "Professional caregiver training focusing on elderly care, disability support, and patient assistance.",
+    duration: "19 days & 3 Month on the job Traning",
+    students: "40+ enrolled",
+    certification: "Industry Recognized",
+    image:
+      "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=800",
+    highlights: [
+      "Elderly Care",
+      "Disability Support",
+      "Communication Skills",
+      "Safety Protocols",
+    ],
+    link: "skillupgrade",
+  },
   {
     title: "First Aid",
     description:
       "Essential first aid and emergency response training for various emergency situations.",
-    duration: "2-4 weeks",
-    students: "100+ enrolled",
+    duration: "Upcoming..",
+    students: "Upcoming..",
     certification: "Red Cross Certified",
     image:
       "https://images.pexels.com/photos/6823566/pexels-photo-6823566.jpeg?auto=compress&cs=tinysrgb&w=800",
@@ -303,7 +321,7 @@ export const coursesMain = [
       "CPR Training",
       "Emergency Response",
       "Wound Care",
-      "Medical Emergencies",
+     
     ],
     link: "firstaid",
   },
@@ -312,8 +330,8 @@ export const coursesMain = [
     title: "Pharmacy Assistant Course",
     description:
       "Professional training for pharmacy assistants covering medication management and customer service.",
-    duration: "4-6 months",
-    students: "30+ enrolled",
+    duration: "Upcoming..",
+    students: "Upcoming..",
     certification: "Pharmacy Board Certified",
     image:
       "https://images.pexels.com/photos/4226721/pexels-photo-4226721.jpeg?auto=compress&cs=tinysrgb&w=800",
