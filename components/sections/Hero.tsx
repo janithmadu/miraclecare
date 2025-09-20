@@ -134,6 +134,8 @@ export default function Hero() {
                     src={slides[currentSlide].image}
                     alt={slides[currentSlide].title}
                     className="w-full h-full object-cover"
+                    fetchPriority="high"
+                    loading="eager"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 </motion.div>
@@ -177,7 +179,12 @@ export default function Hero() {
               className="absolute -top-4 -left-4 bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg border border-white/20"
             >
               <div className="flex items-center gap-2">
-                <Image src="https://res.cloudinary.com/dwml3axwl/image/upload/v1757927085/nvq-removebg-preview_gmkvcp.png" alt="NVQ" width={50} height={50} />
+                <Image
+                  src="https://res.cloudinary.com/dwml3axwl/image/upload/v1757927085/nvq-removebg-preview_gmkvcp.png"
+                  alt="NVQ"
+                  width={50}
+                  height={50}
+                />
                 <span className="text-sm font-medium text-[#000058]">
                   NVQ Certified Class
                 </span>
