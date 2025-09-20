@@ -42,7 +42,7 @@ export const slides = [
   description:
     "Specialized training programs designed for overseas employment opportunities in Israel with job placement support.",
   image:
-    "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758355104/thumbnail_IMG_4329_fj1bul.jpg",
   cta: "Explore Israel Courses",
   href: "/courses",
 },
@@ -52,7 +52,7 @@ export const slides = [
     description:
       "Comprehensive nursing programs with hands-on clinical training and government certification",
     image:
-      "https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758354817/aa4a35ea-5fec-4eec-929e-2970db21c2c5_hh3kti.jpg",
     cta: "Explore Nursing Courses",
     href: "/courses",
   },
@@ -62,7 +62,7 @@ export const slides = [
     description:
       "Professional caregiver training for elderly care, disability support, and patient assistance",
     image:
-      "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758354677/thumbnail_IMG_0924_ocsdvv.jpg",
     cta: "Start Care Training",
     href: "/courses",
   },
@@ -72,7 +72,7 @@ export const slides = [
     description:
       "Essential first aid and emergency response training with Red Cross certification",
     image:
-      "https://images.pexels.com/photos/6823566/pexels-photo-6823566.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758355109/IMG_3051_anlsod.jpg",
     cta: "Get Certified",
     href: "/courses",
   },
@@ -82,7 +82,7 @@ export const slides = [
     description:
       "Earn NVQ Level certifications to advance your career with nationally recognized vocational qualifications.",
     image:
-      "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758355103/IMG_3980_h8vrdu.jpg",
     cta: "View NVQ Courses",
     href: "/courses",
   },
@@ -141,22 +141,22 @@ export const features = [
 
 export const images = [
   {
-    src: "https://images.pexels.com/photos/5452268/pexels-photo-5452268.jpeg?auto=compress&cs=tinysrgb&w=800",
+    src: "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758354446/thumbnail_IMG_0677_xfxv5s.jpg",
     title: "Modern Campus Building",
     description: "State-of-the-art facilities designed for optimal learning",
   },
   {
-    src: "https://images.pexels.com/photos/8636677/pexels-photo-8636677.jpeg?auto=compress&cs=tinysrgb&w=800",
+    src: "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758355811/IMG_4372_a3k06a.jpg",
     title: "Interactive Classrooms",
     description: "Modern learning environments with latest technology",
   },
   {
-    src: "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=800",
+    src: "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758355106/CDCD1F68-6A77-4C12-9E46-D810E145EF20_d71m63.jpg",
     title: "Practical Training Areas",
     description: "Real-world simulation environments for hands-on learning",
   },
   {
-    src: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800",
+    src: "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758355095/thumbnail_IMG_3055_spkhnp.jpg",
     title: "Collaborative Learning Spaces",
     description: "Open areas designed to encourage teamwork and innovation",
   },
@@ -264,7 +264,7 @@ export const coursesMain = [
     students: "50+ enrolled",
     certification: "Government Certified",
     image:
-      "https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758356644/ani-kolleshi-7jjnJ-QA9fY-unsplash_fcax7k.jpg",
     highlights: [
       "Patient Care",
       "Medical Terminology",
@@ -281,7 +281,7 @@ export const coursesMain = [
     students: "40+ enrolled",
     certification: "Industry Recognized",
     image:
-      "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758356981/197_ltbwfe.jpg",
     highlights: [
       "Elderly Care",
       "Disability Support",
@@ -299,7 +299,7 @@ export const coursesMain = [
     students: "40+ enrolled",
     certification: "Industry Recognized",
     image:
-      "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758357107/20730_o9ztcx.jpg",
     highlights: [
       "Elderly Care",
       "Disability Support",
@@ -316,7 +316,7 @@ export const coursesMain = [
     students: "Upcoming..",
     certification: "Red Cross Certified",
     image:
-      "https://images.pexels.com/photos/6823566/pexels-photo-6823566.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758357225/47115_a7eheo.jpg",
     highlights: [
       "CPR Training",
       "Emergency Response",
@@ -334,7 +334,7 @@ export const coursesMain = [
     students: "Upcoming..",
     certification: "Pharmacy Board Certified",
     image:
-      "https://images.pexels.com/photos/4226721/pexels-photo-4226721.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758357318/25541_bxvh4i.jpg",
     highlights: [
       "Medication Knowledge",
       "Customer Service",

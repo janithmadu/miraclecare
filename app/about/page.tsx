@@ -112,32 +112,33 @@ export default function About() {
                   transition={{ duration: 0.3 }}
                   className="space-y-4"
                 >
-                  <img
-                    src="https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=400"
-                    alt="Healthcare training"
-                    className="w-full h-48 object-cover rounded-2xl shadow-lg"
-                  />
-                  <img
-                    src="https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg?auto=compress&cs=tinysrgb&w=400"
-                    alt="Student training"
-                    className="w-full h-32 object-cover rounded-2xl shadow-lg"
-                  />
-                </motion.div>
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.3 }}
-                  className="space-y-4 pt-8"
-                >
-                  <img
-                    src="https://images.pexels.com/photos/8636677/pexels-photo-8636677.jpeg?auto=compress&cs=tinysrgb&w=400"
-                    alt="Language class"
-                    className="w-full h-32 object-cover rounded-2xl shadow-lg"
-                  />
-                  <img
-                    src="https://images.pexels.com/photos/7648047/pexels-photo-7648047.jpeg?auto=compress&cs=tinysrgb&w=400"
-                    alt="Campus facilities"
-                    className="w-full h-48 object-cover rounded-2xl shadow-lg"
-                  />
+                  
+                 <img
+                  src="https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758353168/thumbnail_IMG_0684_jxz3pv.jpg"
+                  alt="Healthcare training"
+                  className="w-full h-48 object-cover rounded-2xl shadow-lg"
+                />
+                <img
+                  src="https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758354136/thumbnail_IMG_0236_duprbr.jpg"
+                  alt="Student training"
+                  className="w-full h-32 object-cover rounded-2xl shadow-lg"
+                />
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+                className="space-y-4 pt-8"
+              >
+                <img
+                  src="https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758354303/thumbnail_IMG_0331_wboup6.jpg"
+                  alt="Language class"
+                  className="w-full h-32 object-cover rounded-2xl shadow-lg"
+                />
+                <img
+                  src="https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758354445/thumbnail_IMG_0683_toukqj.jpg"
+                  alt="Campus facilities"
+                  className="w-full h-48 object-cover rounded-2xl shadow-lg"
+                />
                 </motion.div>
               </div>
             </motion.div>

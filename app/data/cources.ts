@@ -5,7 +5,7 @@ export const courses = [
     subtitle:
       "Comprehensive nursing programs with hands-on clinical training and government certification",
     heroImage:
-      "https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758356644/ani-kolleshi-7jjnJ-QA9fY-unsplash_fcax7k.jpg",
     courseDetails: {
       ageLimit: "16-40 years",
       qualifications:
@@ -49,7 +49,7 @@ export const courses = [
     subtitle:
       "Specialized training to provide compassionate care for the elderly, disabled, and patients in need",
     heroImage:
-      "https://images.pexels.com/photos/7551676/pexels-photo-7551676.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758356981/197_ltbwfe.jpg",
     courseDetails: {
       ageLimit: "18-55 years",
       qualifications: "10 Year Pass",
@@ -90,7 +90,7 @@ export const courses = [
     subtitle:
       "Essential first aid knowledge and hands-on skills to respond to medical emergencies effectively",
     heroImage:
-      "https://images.pexels.com/photos/8460340/pexels-photo-8460340.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758357225/47115_a7eheo.jpg",
     courseDetails: {
       ageLimit: "",
       qualifications: "",
@@ -115,7 +115,7 @@ export const courses = [
     subtitle:
       "Practical training to assist pharmacists in dispensing medicines and managing pharmacy operations",
     heroImage:
-      "https://images.pexels.com/photos/4210608/pexels-photo-4210608.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758357318/25541_bxvh4i.jpg",
     courseDetails: {
       ageLimit: "",
       qualifications: "",
@@ -152,7 +152,7 @@ export const courses = [
     subtitle:
       "Advanced training in caregiving, focusing on elderly care, patient support, and professional healthcare skills.",
     heroImage:
-      "https://images.pexels.com/photos/339620/pexels-photo-339620.jpeg",
+      "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758357107/20730_o9ztcx.jpg",
     courseDetails: {
       ageLimit: "18-55 years",
       qualifications: "Complete NVQ 3",
