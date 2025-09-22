@@ -58,8 +58,8 @@ export const courses = [
         "Passport Size Photos (2 copies)",
       ],
       courseFee: "LKR 45000",
-      duration: "52 days",
-      lectureHours: "5 hours per day",
+      duration: "52 working days",
+      lectureHours: "7 hours per day",
       certificateAward:
         "Government Certified Nursing Assistant Certificate NVQ 3 & 4",
     },
@@ -148,7 +148,7 @@ export const courses = [
   },
   {
     id: "skillupgrade",
-    title: "Caregiver Course NVQ  4",
+    title: "Skill Upgrade",
     subtitle:
       "Advanced training in caregiving, focusing on elderly care, patient support, and professional healthcare skills.",
     heroImage:

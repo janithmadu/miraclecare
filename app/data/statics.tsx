@@ -11,6 +11,7 @@ import {
   Heart,
   Pill,
 } from "lucide-react";
+import { FaTiktok } from "react-icons/fa6";
 export const ContactInformation = {
   MobileNumber: "+94 767338419",
   LanNumber: "+94 374941221",
@@ -21,7 +22,7 @@ export const ContactInformation = {
   TikTokLink:
     "https://www.tiktok.com/@miracle.care.camp3?_t=ZS-8zbeGsyGpBI&_r=1",
   EmailAddressNormal: "miraclecare@miraclehospitals.lk",
-  EmailAddressAdmition: "admissions@miraclehospitals.lk",
+  EmailAddressAdmition: "",
   OfficeHours: "8.00 am to 5.00 pm",
 };
 
@@ -37,15 +38,15 @@ export const stats = [
 
 export const slides = [
   {
-  title: "Israel Job Granted Courses",
-  subtitle: "Guaranteed Overseas Employment",
-  description:
-    "Specialized training programs designed for overseas employment opportunities in Israel with job placement support.",
-  image:
-    "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758355104/thumbnail_IMG_4329_fj1bul.jpg",
-  cta: "Explore Israel Courses",
-  href: "/courses",
-},
+    title: "Israel Job Granted Courses",
+    subtitle: "Guaranteed Overseas Employment",
+    description:
+      "Specialized training programs designed for overseas employment opportunities in Israel with job placement support.",
+    image:
+      "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758355104/thumbnail_IMG_4329_fj1bul.jpg",
+    cta: "Explore Israel Courses",
+    href: "/courses",
+  },
   {
     title: "Professional Nursing Training",
     subtitle: "Launch Your Healthcare Career",
@@ -91,13 +92,13 @@ export const slides = [
 export const socialLinks = [
   {
     icon: Facebook,
-    href: "https://www.facebook.com/share/178719nNrV/?mibextid=wwXIfr",
+    href: "https://www.facebook.com/MiracleCareCampus",
     color: "hover:text-blue-600",
   },
-  { icon: Instagram, href: "#", color: "hover:text-pink-600" },
-  { icon: Linkedin, href: "#", color: "hover:text-blue-700" },
+  // { icon: Instagram, href: "#", color: "hover:text-pink-600" },
+  // { icon: Linkedin, href: "#", color: "hover:text-blue-700" },
   {
-    icon: Linkedin,
+    icon: FaTiktok,
     href: "https://www.tiktok.com/@miracle.care.camp3?_t=ZS-8zbeGsyGpBI&_r=1",
     color: "hover:text-blue-700",
   },
@@ -291,7 +292,7 @@ export const coursesMain = [
     link: "caregiver",
   },
 
-   {
+  {
     title: "Caregiver Course NVQ  4",
     description:
       "Professional caregiver training focusing on elderly care, disability support, and patient assistance.",
@@ -317,12 +318,7 @@ export const coursesMain = [
     certification: "Red Cross Certified",
     image:
       "https://res.cloudinary.com/dwml3axwl/image/upload/f_auto,q_auto,w_1200,c_fill,g_auto,e_sharpen/v1758357225/47115_a7eheo.jpg",
-    highlights: [
-      "CPR Training",
-      "Emergency Response",
-      "Wound Care",
-     
-    ],
+    highlights: ["CPR Training", "Emergency Response", "Wound Care"],
     link: "firstaid",
   },
 
