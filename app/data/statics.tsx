@@ -293,7 +293,7 @@ export const coursesMain = [
   },
 
   {
-    title: "Caregiver Course NVQ  4",
+    title: "Skill Upgrade",
     description:
       "Professional caregiver training focusing on elderly care, disability support, and patient assistance.",
     duration: "19 days & 3 Month on the job Traning",
