@@ -184,8 +184,9 @@ export const certifications = [
   },
   {
     icon: CheckCircle,
-    title: "Quality Assurance",
-    description: "ISO certified training processes",
+    title: "NVQ Level Certification",
+    description:
+      "We provide internationally recognized NVQ Level Certifications",
     color: "text-[#0000a0]",
   },
 ];
