@@ -114,6 +114,7 @@ export const quickLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
   { href: "/courses", label: "Our Courses" },
+  { href: '/gallery', label: 'Gallery' },
   { href: "/contact", label: "Contact Us" },
 ];
 
